@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    long int n;
+    n = 10 * 256 * 256 * 256 + 3 * 256 * 256 + 8 * 256 + 211;
+    cout << "10.3.8.211对应的二进制格式IP地址为：";
+    printf("%00x\n", n);
+    return 0;
+}
