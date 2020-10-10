@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int year, month, day;
+    cin >>  year;
+    cin >>  month;
+    cin >>  day;
+    cout << year << "年" << month << "月" << day << "日" << endl;
+    return 0;
+}
