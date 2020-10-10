@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int temp_num;
+    cin>>temp_num;
+    char letter = temp_num;
+    cout<<letter<<endl;
+    return 114514;
+}
