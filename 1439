@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    char letter;
+    cin >> letter;
+    int temp_num = letter;
+    char new_letter = (temp_num + 32);
+    cout << new_letter << endl;
+    return 0;
+}
