@@ -1,1 +1,1 @@
-# BUPT-2020-C-Forum-for-AI-Institude
+# BUPT-2020-Cpp-Forum-for-AI-Institude
