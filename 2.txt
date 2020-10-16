@@ -1,0 +1,173 @@
+#include<iostream>
+using namespace std;
+void Sorting(int array[], int length);
+int main()
+{
+	int array[3];
+	cin >> array[0] >> array[1] >> array[2];
+	Sorting(array, 3);
+	return 0;
+}
+void Sorting(int array[], int length)
+{
+	for (int i = 0; i < length; i++)
+	{
+		int min = i;
+		for (int j = min + 1; j < length; j++)
+		{
+			if (array[j] < array[min])
+			{
+				min = j;
+			}
+		}
+		int tn = array[i];
+		array[i] = array[min];
+		array[min] = tn;
+	}
+	cout << array[2] << " " << array[1] << " " << array[0];
+}
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+	cin >> num;
+	for (int i = 7 ; ; i++)
+		if (num < 13 * i)
+		{
+			cout <<13 * i - 13;
+			break;
+		}
+	return 0;
+}
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int v;
+	cin >> v;
+	for (int i = 1; ; i++)
+		if (((1 + i) * i / 2) >= v)
+		{
+			cout << v + i - 1;
+			break;
+		}
+	return 0;
+}
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	int s = 0;
+	int temp = 0;
+	cin >> x;
+	for (int i = 1; ; i++)
+	{
+		int t = 1;
+		for (int k = 1; k <= i; k++)
+			t = t * k;
+		s = s + t;
+		if (s <= x)
+			temp = i;
+		else
+		{
+			cout << temp;
+			break;
+		}	
+	}
+	return 0;
+}
+
+#include<iostream>
+using namespace std;
+ 
+int primecheck(int n);
+ 
+int main()
+{
+    int n;
+    cin >> n;
+    if (primecheck(n) == 0)
+        cout << "素数";
+    else
+    {
+        cout << 1 << " ";
+        for (int j = 2; j < n; j++)
+            if (n % j == 0)
+                cout << j << " ";
+        cout << n;
+    }
+    return 0;
+}
+ 
+int primecheck(int n)
+{
+    int checkpoint = 0;
+    for (int i = 2; i < n; i++)
+        if (n % i == 0)
+            checkpoint = 1;
+    return checkpoint;
+}
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	char buffer[5];
+	int array[5];
+	char A, B, C, D, E;
+	A = 'A';
+	B = 'B';
+	C = 'C';
+	D = 'D';
+	E = 'E';
+	int i = 0;
+	int m = 0;
+	while (i < 5)
+	{
+		cin >> buffer[i];
+		cin >> array[i];
+		i++;
+	}
+	for (int k = 0; k < 5; k++)
+	{
+		if (buffer[k] == A)
+			m = m + 10 * array[k];
+		else if (buffer[k] == B)
+			m = m + 5 * array[k];
+		else if (buffer[k] ==C)
+			m = m + 3 * array[k];
+		else if (buffer[k] == D)
+			m = m + 20 * array[k];
+		else if (buffer[k] == E)
+			m = m + 13 * array[k];
+	}
+	cout << m;
+	return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	char l;
+	cin >> n;
+	cin >> l;
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j <= n - i; j++)
+			cout << " ";
+		for (int k = 1; k <= 2 * i - 1; k++)
+			cout << l;
+		cout << endl;
+	}
+	return 0;
+}
